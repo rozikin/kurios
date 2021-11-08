@@ -3,6 +3,7 @@ import './Blog.scss'
 import Header from '../../components/header/Header'
 import { FIELD_BINDER, MENU_ITEMS } from '../../constants/constants'
 import { useBinder } from '../../utilities/binder'
+import Footer from '../../components/footer/Footer'
 
 function Blog() {
     const bodyRef: LegacyRef<HTMLDivElement>= useRef(null)
@@ -27,6 +28,7 @@ function Blog() {
     <div ref={bodyRef} className="Blog">
       <Header searchCallback={searcCallBack}/>
       <div style={{height: '2000px'}} >Blog </div>
+      <Footer />
     </div >
   );
 }

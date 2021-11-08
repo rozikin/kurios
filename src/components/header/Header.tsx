@@ -1,7 +1,6 @@
 import './Header.scss'
 import logo from '../../assets/images/logo.png'
 import SearchBar from '../search/SearchBar'
-import icChevron from '../../assets/svg/ic_chevron.svg'
 import Personicon from '../../assets/tsx/Personicon'
 import Favouriteicon from '../../assets/tsx/Favouriteicon'
 import Carticon from '../../assets/tsx/Carticon'

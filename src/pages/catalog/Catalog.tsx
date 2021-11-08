@@ -3,6 +3,7 @@ import './Catalog.scss'
 import Header from '../../components/header/Header'
 import { FIELD_BINDER, MENU_ITEMS } from '../../constants/constants'
 import { useBinder } from '../../utilities/binder'
+import Footer from '../../components/footer/Footer'
 
 function Catalog() {
     const bodyRef: LegacyRef<HTMLDivElement>= useRef(null)
@@ -28,6 +29,7 @@ function Catalog() {
       <Header searchCallback={searcCallBack}/>
       <div style={{height: '2000px'}}>catalog </div>
       hello word
+      <Footer />
     </div >
   );
 }

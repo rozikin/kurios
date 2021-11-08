@@ -3,6 +3,7 @@ import './Combed.scss'
 import Header from '../../components/header/Header'
 import { FIELD_BINDER, MENU_ITEMS } from '../../constants/constants'
 import { useBinder } from '../../utilities/binder'
+import Footer from '../../components/footer/Footer'
 
 function Combed() {
     const bodyRef: LegacyRef<HTMLDivElement>= useRef(null)
@@ -27,6 +28,8 @@ function Combed() {
     <div ref={bodyRef} className="combed">
       <Header searchCallback={searcCallBack}/>
       <div style={{height: '2000px'}}>ckombed</div>
+
+      <Footer />
     </div >
   );
 }

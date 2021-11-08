@@ -3,6 +3,7 @@ import './Warehouse.scss'
 import Header from '../../components/header/Header'
 import { FIELD_BINDER, MENU_ITEMS } from '../../constants/constants'
 import { useBinder } from '../../utilities/binder'
+import Footer from '../../components/footer/Footer'
 
 function Warehouse() {
     const bodyRef: LegacyRef<HTMLDivElement>= useRef(null)
@@ -27,6 +28,7 @@ function Warehouse() {
     <div ref={bodyRef} className="Warehouse">
       <Header searchCallback={searcCallBack}/>
       <div style={{height: '2000px'}} >Warehouse </div>
+      <Footer />
     </div >
   );
 }

@@ -3,6 +3,7 @@ import './Product.scss'
 import Header from '../../components/header/Header'
 import { FIELD_BINDER, MENU_ITEMS } from '../../constants/constants'
 import { useBinder } from '../../utilities/binder'
+import Footer from '../../components/footer/Footer'
 
 function Product() {
     const bodyRef: LegacyRef<HTMLDivElement>= useRef(null)
@@ -27,6 +28,8 @@ function Product() {
     <div ref={bodyRef} className="Product">
       <Header searchCallback={searcCallBack}/>
       <div style={{height: '2000px'}} >Product </div>
+
+   
     </div >
   );
 }
